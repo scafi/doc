@@ -1,0 +1,862 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>SpatialSimulatorContextImpl - it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl</title>
+          <meta name="description" content="SpatialSimulatorContextImpl - it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl" />
+          <meta name="keywords" content="SpatialSimulatorContextImpl it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="it">it</a>.<a href="../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="package.html" class="extype" name="it.unibo.scafi.simulation">simulation</a>.<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.<a href="SpatialSimulation$SpaceAwareSimulator.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator">SpaceAwareSimulator</a></p>
+        <h1>SpatialSimulatorContextImpl</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="SpatialSimulation$SpaceAwareSimulator.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator">package SpaceAwareSimulator</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SpatialSimulatorContextImpl</span><span class="result"> extends <a href="SpatialSimulation$SpaceAwareSimulator.html#SimulatorContextImplextendsSimulation.this.ContextImplwithSimulation.this.StandardTemporalSensorNameswithSimulation.this.StandardPlatformSensorNames" class="extmbr" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SimulatorContextImpl</a> with (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">(<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</span>, <a href="SpatialSimulation$SpaceAwareSimulator.html#SimulatorContextImplextendsSimulation.this.ContextImplwithSimulation.this.StandardTemporalSensorNameswithSimulation.this.StandardPlatformSensorNames" class="extmbr" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SpaceAwareSimulator.SimulatorContextImpl</a>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames">StandardPlatformSensorNames</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Semantics.ContextOps">ContextOps</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.Context">Context</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl"><span>SpatialSimulatorContextImpl</span></li><li class="in" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames"><span>StandardSpatialSensorNames</span></li><li class="in" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl"><span>SimulatorContextImpl</span></li><li class="in" name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames"><span>StandardPlatformSensorNames</span></li><li class="in" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames"><span>StandardTemporalSensorNames</span></li><li class="in" name="it.unibo.scafi.core.Engine.ContextImpl"><span>ContextImpl</span></li><li class="in" name="it.unibo.scafi.core.Engine.BaseContextImpl"><span>BaseContextImpl</span></li><li class="in" name="it.unibo.scafi.core.Semantics.ContextOps"><span>ContextOps</span></li><li class="in" name="it.unibo.scafi.core.Core.Context"><span>Context</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(id:SpatialSimulation.this.ID):SpaceAwareSimulator.this.SpatialSimulatorContextImpl"></a>
+      <a id="&lt;init&gt;:SpatialSimulatorContextImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SpatialSimulatorContextImpl</span><span class="params">(<span name="id">id: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@&lt;init&gt;(id:SpatialSimulation.this.ID):SpaceAwareSimulator.this.SpatialSimulatorContextImpl" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames#LSNS_DELTA_TIME" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LSNS_DELTA_TIME:TimeAwarePlatform.this.CNAME"></a>
+      <a id="LSNS_DELTA_TIME:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LSNS_DELTA_TIME</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@LSNS_DELTA_TIME:TimeAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/TimeAwarePlatform$StandardTemporalSensorNames.html" class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames#LSNS_POSITION" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LSNS_POSITION:SpaceAwarePlatform.this.CNAME"></a>
+      <a id="LSNS_POSITION:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LSNS_POSITION</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@LSNS_POSITION:SpaceAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/SpaceAwarePlatform$StandardSpatialSensorNames.html" class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames#LSNS_RANDOM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LSNS_RANDOM:Platform.this.CNAME"></a>
+      <a id="LSNS_RANDOM:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LSNS_RANDOM</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@LSNS_RANDOM:Platform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/Platform$StandardPlatformSensorNames.html" class="extype" name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames">StandardPlatformSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames#LSNS_TIME" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LSNS_TIME:TimeAwarePlatform.this.CNAME"></a>
+      <a id="LSNS_TIME:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LSNS_TIME</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@LSNS_TIME:TimeAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/TimeAwarePlatform$StandardTemporalSensorNames.html" class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames#LSNS_TIMESTAMP" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LSNS_TIMESTAMP:TimeAwarePlatform.this.CNAME"></a>
+      <a id="LSNS_TIMESTAMP:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LSNS_TIMESTAMP</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@LSNS_TIMESTAMP:TimeAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/TimeAwarePlatform$StandardTemporalSensorNames.html" class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames#NBR_DELAY" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NBR_DELAY:TimeAwarePlatform.this.CNAME"></a>
+      <a id="NBR_DELAY:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NBR_DELAY</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@NBR_DELAY:TimeAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/TimeAwarePlatform$StandardTemporalSensorNames.html" class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames#NBR_LAG" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NBR_LAG:TimeAwarePlatform.this.CNAME"></a>
+      <a id="NBR_LAG:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NBR_LAG</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@NBR_LAG:TimeAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/TimeAwarePlatform$StandardTemporalSensorNames.html" class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames#NBR_RANGE" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NBR_RANGE:SpaceAwarePlatform.this.CNAME"></a>
+      <a id="NBR_RANGE:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NBR_RANGE</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@NBR_RANGE:SpaceAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/SpaceAwarePlatform$StandardSpatialSensorNames.html" class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames#NBR_VECTOR" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NBR_VECTOR:SpaceAwarePlatform.this.CNAME"></a>
+      <a id="NBR_VECTOR:(SpatialSimulation.this)#CNAME"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NBR_VECTOR</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@NBR_VECTOR:SpaceAwarePlatform.this.CNAME" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../platform/SpaceAwarePlatform$StandardSpatialSensorNames.html" class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.BaseContextImpl#exports" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exports():Iterable[(Engine.this.ID,Engine.this.EXPORT)]"></a>
+      <a id="exports():Iterable[((SpatialSimulation.this)#ID,(SpatialSimulation.this)#EXPORT)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exports</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[((<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span>, (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.EXPORT">EXPORT</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@exports():Iterable[(Engine.this.ID,Engine.this.EXPORT)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$BaseContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</a> → <a href="../core/Core$Context.html" class="extype" name="it.unibo.scafi.core.Core.Context">Context</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.ContextImpl#localSensor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSensor:scala.collection.Map[Engine.this.CNAME,Any]"></a>
+      <a id="localSensor:Map[(SpatialSimulation.this)#CNAME,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSensor</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[(<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@localSensor:scala.collection.Map[Engine.this.CNAME,Any]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$ContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl#localSensorRetrieve" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSensorRetrieve[T](lsns:SpatialSimulation.this.CNAME,id:SpatialSimulation.this.ID):Option[T]"></a>
+      <a id="localSensorRetrieve[T]((SpatialSimulation.this)#CNAME,(SpatialSimulation.this)#ID):Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSensorRetrieve</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="lsns">lsns: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>, <span name="id">id: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl.localSensorRetrieve.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@localSensorRetrieve[T](lsns:SpatialSimulation.this.CNAME,id:SpatialSimulation.this.ID):Option[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl">SpatialSimulatorContextImpl</a> → <a href="Simulation$NetworkSimulator$SimulatorContextImpl.html" class="extype" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SimulatorContextImpl</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl#nbrSense" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nbrSense[T](nsns:SpatialSimulation.this.CNAME)(nbr:SpatialSimulation.this.ID):Option[T]"></a>
+      <a id="nbrSense[T]((SpatialSimulation.this)#CNAME)((SpatialSimulation.this)#ID):Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nbrSense</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="nsns">nsns: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>)</span><span class="params">(<span name="nbr">nbr: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl.nbrSense.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@nbrSense[T](nsns:SpatialSimulation.this.CNAME)(nbr:SpatialSimulation.this.ID):Option[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl">SpatialSimulatorContextImpl</a> → <a href="Simulation$NetworkSimulator$SimulatorContextImpl.html" class="extype" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SimulatorContextImpl</a> → <a href="../core/Engine$ContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</a> → <a href="../core/Core$Context.html" class="extype" name="it.unibo.scafi.core.Core.Context">Context</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.ContextImpl#nbrSensor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nbrSensor:scala.collection.Map[Engine.this.CNAME,scala.collection.Map[Engine.this.ID,Any]]"></a>
+      <a id="nbrSensor:Map[(SpatialSimulation.this)#CNAME,Map[(SpatialSimulation.this)#ID,Any]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nbrSensor</span><span class="result">: <span class="extype" name="scala.collection.Map">Map</span>[(<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span>, <span class="extype" name="scala.collection.Map">Map</span>[(<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span>, <span class="extype" name="scala.Any">Any</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@nbrSensor:scala.collection.Map[Engine.this.CNAME,scala.collection.Map[Engine.this.ID,Any]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$ContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl#nbrSensorRetrieve" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nbrSensorRetrieve[T](nsns:SpatialSimulation.this.CNAME,id:SpatialSimulation.this.ID,nbr:SpatialSimulation.this.ID):Option[T]"></a>
+      <a id="nbrSensorRetrieve[T]((SpatialSimulation.this)#CNAME,(SpatialSimulation.this)#ID,(SpatialSimulation.this)#ID):Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nbrSensorRetrieve</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="nsns">nsns: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>, <span name="id">id: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>, <span name="nbr">nbr: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl.nbrSensorRetrieve.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@nbrSensorRetrieve[T](nsns:SpatialSimulation.this.CNAME,id:SpatialSimulation.this.ID,nbr:SpatialSimulation.this.ID):Option[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl">SpatialSimulatorContextImpl</a> → <a href="Simulation$NetworkSimulator$SimulatorContextImpl.html" class="extype" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SimulatorContextImpl</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.BaseContextImpl#readSlot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readSlot[A](i:Engine.this.ID,p:Engine.this.Path):Option[A]"></a>
+      <a id="readSlot[A]((SpatialSimulation.this)#ID,(SpatialSimulation.this)#Path):Option[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readSlot</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="i">i: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>, <span name="p">p: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Semantics.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl.readSlot.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@readSlot[A](i:Engine.this.ID,p:Engine.this.Path):Option[A]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$BaseContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</a> → <a href="../core/Semantics$ContextOps.html" class="extype" name="it.unibo.scafi.core.Semantics.ContextOps">ContextOps</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.BaseContextImpl#selfId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selfId:Engine.this.ID"></a>
+      <a id="selfId:(SpatialSimulation.this)#ID"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selfId</span><span class="result">: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@selfId:Engine.this.ID" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$BaseContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</a> → <a href="../core/Core$Context.html" class="extype" name="it.unibo.scafi.core.Core.Context">Context</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl#sense" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sense[T](lsns:SpatialSimulation.this.CNAME):Option[T]"></a>
+      <a id="sense[T]((SpatialSimulation.this)#CNAME):Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sense</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="lsns">lsns: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.CNAME">CNAME</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl.sense.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@sense[T](lsns:SpatialSimulation.this.CNAME):Option[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation.SpaceAwareSimulator.SpatialSimulatorContextImpl">SpatialSimulatorContextImpl</a> → <a href="Simulation$NetworkSimulator$SimulatorContextImpl.html" class="extype" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SimulatorContextImpl</a> → <a href="../core/Engine$ContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</a> → <a href="../core/Core$Context.html" class="extype" name="it.unibo.scafi.core.Core.Context">Context</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.ContextImpl#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$ContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.core.Engine.BaseContextImpl#updateExport" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateExport(id:Engine.this.ID,export:Engine.this.EXPORT):Unit"></a>
+      <a id="updateExport((SpatialSimulation.this)#ID,(SpatialSimulation.this)#EXPORT):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateExport</span><span class="params">(<span name="id">id: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.ID">ID</span></span>, <span name="export">export: (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.EXPORT">EXPORT</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@updateExport(id:Engine.this.ID,export:Engine.this.EXPORT):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Engine$BaseContextImpl.html" class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.simulation.SpatialSimulation$SpaceAwareSimulator$SpatialSimulatorContextImpl@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.SpaceAwarePlatform.StandardSpatialSensorNames">StandardSpatialSensorNames</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">
+              <h3>Inherited from <a href="SpatialSimulation$SpaceAwareSimulator.html#SimulatorContextImplextendsSimulation.this.ContextImplwithSimulation.this.StandardTemporalSensorNameswithSimulation.this.StandardPlatformSensorNames" class="extmbr" name="it.unibo.scafi.simulation.Simulation.NetworkSimulator.SimulatorContextImpl">SpaceAwareSimulator.SimulatorContextImpl</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.Platform.StandardPlatformSensorNames">StandardPlatformSensorNames</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.platform.TimeAwarePlatform.StandardTemporalSensorNames">StandardTemporalSensorNames</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.core.Engine.ContextImpl">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.ContextImpl">ContextImpl</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.core.Engine.BaseContextImpl">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Engine.BaseContextImpl">BaseContextImpl</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.core.Semantics.ContextOps">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Semantics.ContextOps">ContextOps</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.core.Core.Context">
+              <h3>Inherited from (<a href="SpatialSimulation.html" class="extype" name="it.unibo.scafi.simulation.SpatialSimulation">SpatialSimulation</a>.this)#<span class="extype" name="it.unibo.scafi.core.Core.Context">Context</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

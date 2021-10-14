@@ -1,0 +1,1534 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>DependencyEmitter - it.unibo.scafi.distrib.DependencyEmitter</title>
+          <meta name="description" content="DependencyEmitter - it.unibo.scafi.distrib.DependencyEmitter" />
+          <meta name="keywords" content="DependencyEmitter it.unibo.scafi.distrib.DependencyEmitter" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'it.unibo.scafi.distrib.DependencyEmitter';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="DependencyEmitter$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="it">it</a>.<a href="../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="package.html" class="extype" name="it.unibo.scafi.distrib">distrib</a></p>
+        <h1><a href="DependencyEmitter$.html" title="See companion object">DependencyEmitter</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="DependencyEmitter$.html" title="See companion object">object DependencyEmitter</a>
+            | <a href="package.html" class="extype" name="it.unibo.scafi.distrib">package distrib</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DependencyEmitter</span><span class="result"> extends <span class="extype" name="org.apache.bcel.classfile.EmptyVisitor">EmptyVisitor</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This visitor is responsible of collecting the dependencies of a <span class="extype" name="JavaClass">JavaClass</span> instance.
+Adapted from: http://illegalargumentexception.blogspot.it/2008/04/java-finding-binary-class-dependencies.html
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="org.apache.bcel.classfile.EmptyVisitor">EmptyVisitor</span>, <span class="extype" name="org.apache.bcel.classfile.Visitor">Visitor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="it.unibo.scafi.distrib.DependencyEmitter"><span>DependencyEmitter</span></li><li class="in" name="org.apache.bcel.classfile.EmptyVisitor"><span>EmptyVisitor</span></li><li class="in" name="org.apache.bcel.classfile.Visitor"><span>Visitor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="it.unibo.scafi.distrib.DependencyEmitter#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(klass:org.apache.bcel.classfile.JavaClass):it.unibo.scafi.distrib.DependencyEmitter"></a>
+      <a id="&lt;init&gt;:DependencyEmitter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DependencyEmitter</span><span class="params">(<span name="klass">klass: <span class="extype" name="org.apache.bcel.classfile.JavaClass">JavaClass</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@&lt;init&gt;(klass:org.apache.bcel.classfile.JavaClass):it.unibo.scafi.distrib.DependencyEmitter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.DependencyEmitter#klass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="klass:org.apache.bcel.classfile.JavaClass"></a>
+      <a id="klass:JavaClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">klass</span><span class="result">: <span class="extype" name="org.apache.bcel.classfile.JavaClass">JavaClass</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@klass:org.apache.bcel.classfile.JavaClass" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.DependencyEmitter#result" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="result:scala.collection.immutable.Map[String,Array[Byte]]"></a>
+      <a id="result:Map[String,Array[Byte]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">result</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@result:scala.collection.immutable.Map[String,Array[Byte]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitAnnotation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitAnnotation(x$1:org.apache.bcel.classfile.Annotations):Unit"></a>
+      <a id="visitAnnotation(Annotations):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitAnnotation</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Annotations">Annotations</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitAnnotation(x$1:org.apache.bcel.classfile.Annotations):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitAnnotationDefault" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitAnnotationDefault(x$1:org.apache.bcel.classfile.AnnotationDefault):Unit"></a>
+      <a id="visitAnnotationDefault(AnnotationDefault):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitAnnotationDefault</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.AnnotationDefault">AnnotationDefault</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitAnnotationDefault(x$1:org.apache.bcel.classfile.AnnotationDefault):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitAnnotationEntry" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitAnnotationEntry(x$1:org.apache.bcel.classfile.AnnotationEntry):Unit"></a>
+      <a id="visitAnnotationEntry(AnnotationEntry):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitAnnotationEntry</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.AnnotationEntry">AnnotationEntry</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitAnnotationEntry(x$1:org.apache.bcel.classfile.AnnotationEntry):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitBootstrapMethods" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitBootstrapMethods(x$1:org.apache.bcel.classfile.BootstrapMethods):Unit"></a>
+      <a id="visitBootstrapMethods(BootstrapMethods):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitBootstrapMethods</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.BootstrapMethods">BootstrapMethods</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitBootstrapMethods(x$1:org.apache.bcel.classfile.BootstrapMethods):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitCode(x$1:org.apache.bcel.classfile.Code):Unit"></a>
+      <a id="visitCode(Code):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitCode</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Code">Code</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitCode(x$1:org.apache.bcel.classfile.Code):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitCodeException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitCodeException(x$1:org.apache.bcel.classfile.CodeException):Unit"></a>
+      <a id="visitCodeException(CodeException):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitCodeException</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.CodeException">CodeException</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitCodeException(x$1:org.apache.bcel.classfile.CodeException):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.DependencyEmitter#visitConstantClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantClass(obj:org.apache.bcel.classfile.ConstantClass):Unit"></a>
+      <a id="visitConstantClass(ConstantClass):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantClass</span><span class="params">(<span name="obj">obj: <span class="extype" name="org.apache.bcel.classfile.ConstantClass">ConstantClass</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantClass(obj:org.apache.bcel.classfile.ConstantClass):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.DependencyEmitter">DependencyEmitter</a> → EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantDouble(x$1:org.apache.bcel.classfile.ConstantDouble):Unit"></a>
+      <a id="visitConstantDouble(ConstantDouble):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantDouble</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantDouble">ConstantDouble</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantDouble(x$1:org.apache.bcel.classfile.ConstantDouble):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantDynamic" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantDynamic(x$1:org.apache.bcel.classfile.ConstantDynamic):Unit"></a>
+      <a id="visitConstantDynamic(ConstantDynamic):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantDynamic</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantDynamic">ConstantDynamic</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantDynamic(x$1:org.apache.bcel.classfile.ConstantDynamic):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantFieldref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantFieldref(x$1:org.apache.bcel.classfile.ConstantFieldref):Unit"></a>
+      <a id="visitConstantFieldref(ConstantFieldref):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantFieldref</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantFieldref">ConstantFieldref</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantFieldref(x$1:org.apache.bcel.classfile.ConstantFieldref):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantFloat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantFloat(x$1:org.apache.bcel.classfile.ConstantFloat):Unit"></a>
+      <a id="visitConstantFloat(ConstantFloat):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantFloat</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantFloat">ConstantFloat</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantFloat(x$1:org.apache.bcel.classfile.ConstantFloat):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantInteger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantInteger(x$1:org.apache.bcel.classfile.ConstantInteger):Unit"></a>
+      <a id="visitConstantInteger(ConstantInteger):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantInteger</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantInteger">ConstantInteger</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantInteger(x$1:org.apache.bcel.classfile.ConstantInteger):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantInterfaceMethodref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantInterfaceMethodref(x$1:org.apache.bcel.classfile.ConstantInterfaceMethodref):Unit"></a>
+      <a id="visitConstantInterfaceMethodref(ConstantInterfaceMethodref):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantInterfaceMethodref</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantInterfaceMethodref">ConstantInterfaceMethodref</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantInterfaceMethodref(x$1:org.apache.bcel.classfile.ConstantInterfaceMethodref):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantInvokeDynamic" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantInvokeDynamic(x$1:org.apache.bcel.classfile.ConstantInvokeDynamic):Unit"></a>
+      <a id="visitConstantInvokeDynamic(ConstantInvokeDynamic):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantInvokeDynamic</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantInvokeDynamic">ConstantInvokeDynamic</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantInvokeDynamic(x$1:org.apache.bcel.classfile.ConstantInvokeDynamic):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantLong(x$1:org.apache.bcel.classfile.ConstantLong):Unit"></a>
+      <a id="visitConstantLong(ConstantLong):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantLong</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantLong">ConstantLong</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantLong(x$1:org.apache.bcel.classfile.ConstantLong):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantMethodHandle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantMethodHandle(x$1:org.apache.bcel.classfile.ConstantMethodHandle):Unit"></a>
+      <a id="visitConstantMethodHandle(ConstantMethodHandle):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantMethodHandle</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantMethodHandle">ConstantMethodHandle</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantMethodHandle(x$1:org.apache.bcel.classfile.ConstantMethodHandle):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantMethodType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantMethodType(x$1:org.apache.bcel.classfile.ConstantMethodType):Unit"></a>
+      <a id="visitConstantMethodType(ConstantMethodType):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantMethodType</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantMethodType">ConstantMethodType</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantMethodType(x$1:org.apache.bcel.classfile.ConstantMethodType):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantMethodref" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantMethodref(x$1:org.apache.bcel.classfile.ConstantMethodref):Unit"></a>
+      <a id="visitConstantMethodref(ConstantMethodref):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantMethodref</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantMethodref">ConstantMethodref</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantMethodref(x$1:org.apache.bcel.classfile.ConstantMethodref):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantModule" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantModule(x$1:org.apache.bcel.classfile.ConstantModule):Unit"></a>
+      <a id="visitConstantModule(ConstantModule):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantModule</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantModule">ConstantModule</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantModule(x$1:org.apache.bcel.classfile.ConstantModule):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantNameAndType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantNameAndType(x$1:org.apache.bcel.classfile.ConstantNameAndType):Unit"></a>
+      <a id="visitConstantNameAndType(ConstantNameAndType):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantNameAndType</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantNameAndType">ConstantNameAndType</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantNameAndType(x$1:org.apache.bcel.classfile.ConstantNameAndType):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantPackage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantPackage(x$1:org.apache.bcel.classfile.ConstantPackage):Unit"></a>
+      <a id="visitConstantPackage(ConstantPackage):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantPackage</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantPackage">ConstantPackage</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantPackage(x$1:org.apache.bcel.classfile.ConstantPackage):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantPool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantPool(x$1:org.apache.bcel.classfile.ConstantPool):Unit"></a>
+      <a id="visitConstantPool(ConstantPool):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantPool</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantPool">ConstantPool</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantPool(x$1:org.apache.bcel.classfile.ConstantPool):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantString(x$1:org.apache.bcel.classfile.ConstantString):Unit"></a>
+      <a id="visitConstantString(ConstantString):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantString</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantString">ConstantString</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantString(x$1:org.apache.bcel.classfile.ConstantString):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantUtf8" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantUtf8(x$1:org.apache.bcel.classfile.ConstantUtf8):Unit"></a>
+      <a id="visitConstantUtf8(ConstantUtf8):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantUtf8</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantUtf8">ConstantUtf8</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantUtf8(x$1:org.apache.bcel.classfile.ConstantUtf8):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitConstantValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitConstantValue(x$1:org.apache.bcel.classfile.ConstantValue):Unit"></a>
+      <a id="visitConstantValue(ConstantValue):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitConstantValue</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ConstantValue">ConstantValue</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitConstantValue(x$1:org.apache.bcel.classfile.ConstantValue):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitDeprecated" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitDeprecated(x$1:org.apache.bcel.classfile.Deprecated):Unit"></a>
+      <a id="visitDeprecated(Deprecated):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitDeprecated</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Deprecated">Deprecated</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitDeprecated(x$1:org.apache.bcel.classfile.Deprecated):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitEnclosingMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitEnclosingMethod(x$1:org.apache.bcel.classfile.EnclosingMethod):Unit"></a>
+      <a id="visitEnclosingMethod(EnclosingMethod):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitEnclosingMethod</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.EnclosingMethod">EnclosingMethod</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitEnclosingMethod(x$1:org.apache.bcel.classfile.EnclosingMethod):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitExceptionTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitExceptionTable(x$1:org.apache.bcel.classfile.ExceptionTable):Unit"></a>
+      <a id="visitExceptionTable(ExceptionTable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitExceptionTable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ExceptionTable">ExceptionTable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitExceptionTable(x$1:org.apache.bcel.classfile.ExceptionTable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitField(x$1:org.apache.bcel.classfile.Field):Unit"></a>
+      <a id="visitField(Field):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitField</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Field">Field</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitField(x$1:org.apache.bcel.classfile.Field):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitInnerClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitInnerClass(x$1:org.apache.bcel.classfile.InnerClass):Unit"></a>
+      <a id="visitInnerClass(InnerClass):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitInnerClass</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.InnerClass">InnerClass</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitInnerClass(x$1:org.apache.bcel.classfile.InnerClass):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitInnerClasses" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitInnerClasses(x$1:org.apache.bcel.classfile.InnerClasses):Unit"></a>
+      <a id="visitInnerClasses(InnerClasses):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitInnerClasses</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.InnerClasses">InnerClasses</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitInnerClasses(x$1:org.apache.bcel.classfile.InnerClasses):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitJavaClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitJavaClass(x$1:org.apache.bcel.classfile.JavaClass):Unit"></a>
+      <a id="visitJavaClass(JavaClass):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitJavaClass</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.JavaClass">JavaClass</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitJavaClass(x$1:org.apache.bcel.classfile.JavaClass):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitLineNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitLineNumber(x$1:org.apache.bcel.classfile.LineNumber):Unit"></a>
+      <a id="visitLineNumber(LineNumber):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitLineNumber</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.LineNumber">LineNumber</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitLineNumber(x$1:org.apache.bcel.classfile.LineNumber):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitLineNumberTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitLineNumberTable(x$1:org.apache.bcel.classfile.LineNumberTable):Unit"></a>
+      <a id="visitLineNumberTable(LineNumberTable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitLineNumberTable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.LineNumberTable">LineNumberTable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitLineNumberTable(x$1:org.apache.bcel.classfile.LineNumberTable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitLocalVariable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitLocalVariable(x$1:org.apache.bcel.classfile.LocalVariable):Unit"></a>
+      <a id="visitLocalVariable(LocalVariable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitLocalVariable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.LocalVariable">LocalVariable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitLocalVariable(x$1:org.apache.bcel.classfile.LocalVariable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitLocalVariableTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitLocalVariableTable(x$1:org.apache.bcel.classfile.LocalVariableTable):Unit"></a>
+      <a id="visitLocalVariableTable(LocalVariableTable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitLocalVariableTable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.LocalVariableTable">LocalVariableTable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitLocalVariableTable(x$1:org.apache.bcel.classfile.LocalVariableTable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitLocalVariableTypeTable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitLocalVariableTypeTable(x$1:org.apache.bcel.classfile.LocalVariableTypeTable):Unit"></a>
+      <a id="visitLocalVariableTypeTable(LocalVariableTypeTable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitLocalVariableTypeTable</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.LocalVariableTypeTable">LocalVariableTypeTable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitLocalVariableTypeTable(x$1:org.apache.bcel.classfile.LocalVariableTypeTable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitMethod(x$1:org.apache.bcel.classfile.Method):Unit"></a>
+      <a id="visitMethod(Method):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitMethod</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Method">Method</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitMethod(x$1:org.apache.bcel.classfile.Method):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitMethodParameter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitMethodParameter(x$1:org.apache.bcel.classfile.MethodParameter):Unit"></a>
+      <a id="visitMethodParameter(MethodParameter):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitMethodParameter</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.MethodParameter">MethodParameter</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitMethodParameter(x$1:org.apache.bcel.classfile.MethodParameter):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitMethodParameters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitMethodParameters(x$1:org.apache.bcel.classfile.MethodParameters):Unit"></a>
+      <a id="visitMethodParameters(MethodParameters):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitMethodParameters</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.MethodParameters">MethodParameters</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitMethodParameters(x$1:org.apache.bcel.classfile.MethodParameters):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModule" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModule(x$1:org.apache.bcel.classfile.Module):Unit"></a>
+      <a id="visitModule(Module):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModule</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Module">Module</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModule(x$1:org.apache.bcel.classfile.Module):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModuleExports" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModuleExports(x$1:org.apache.bcel.classfile.ModuleExports):Unit"></a>
+      <a id="visitModuleExports(ModuleExports):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModuleExports</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModuleExports">ModuleExports</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModuleExports(x$1:org.apache.bcel.classfile.ModuleExports):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModuleMainClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModuleMainClass(x$1:org.apache.bcel.classfile.ModuleMainClass):Unit"></a>
+      <a id="visitModuleMainClass(ModuleMainClass):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModuleMainClass</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModuleMainClass">ModuleMainClass</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModuleMainClass(x$1:org.apache.bcel.classfile.ModuleMainClass):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModuleOpens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModuleOpens(x$1:org.apache.bcel.classfile.ModuleOpens):Unit"></a>
+      <a id="visitModuleOpens(ModuleOpens):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModuleOpens</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModuleOpens">ModuleOpens</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModuleOpens(x$1:org.apache.bcel.classfile.ModuleOpens):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModulePackages" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModulePackages(x$1:org.apache.bcel.classfile.ModulePackages):Unit"></a>
+      <a id="visitModulePackages(ModulePackages):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModulePackages</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModulePackages">ModulePackages</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModulePackages(x$1:org.apache.bcel.classfile.ModulePackages):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModuleProvides" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModuleProvides(x$1:org.apache.bcel.classfile.ModuleProvides):Unit"></a>
+      <a id="visitModuleProvides(ModuleProvides):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModuleProvides</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModuleProvides">ModuleProvides</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModuleProvides(x$1:org.apache.bcel.classfile.ModuleProvides):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitModuleRequires" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitModuleRequires(x$1:org.apache.bcel.classfile.ModuleRequires):Unit"></a>
+      <a id="visitModuleRequires(ModuleRequires):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitModuleRequires</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ModuleRequires">ModuleRequires</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitModuleRequires(x$1:org.apache.bcel.classfile.ModuleRequires):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitNestHost" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitNestHost(x$1:org.apache.bcel.classfile.NestHost):Unit"></a>
+      <a id="visitNestHost(NestHost):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitNestHost</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.NestHost">NestHost</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitNestHost(x$1:org.apache.bcel.classfile.NestHost):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitNestMembers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitNestMembers(x$1:org.apache.bcel.classfile.NestMembers):Unit"></a>
+      <a id="visitNestMembers(NestMembers):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitNestMembers</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.NestMembers">NestMembers</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitNestMembers(x$1:org.apache.bcel.classfile.NestMembers):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitParameterAnnotation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitParameterAnnotation(x$1:org.apache.bcel.classfile.ParameterAnnotations):Unit"></a>
+      <a id="visitParameterAnnotation(ParameterAnnotations):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitParameterAnnotation</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ParameterAnnotations">ParameterAnnotations</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitParameterAnnotation(x$1:org.apache.bcel.classfile.ParameterAnnotations):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitParameterAnnotationEntry" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitParameterAnnotationEntry(x$1:org.apache.bcel.classfile.ParameterAnnotationEntry):Unit"></a>
+      <a id="visitParameterAnnotationEntry(ParameterAnnotationEntry):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitParameterAnnotationEntry</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.ParameterAnnotationEntry">ParameterAnnotationEntry</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitParameterAnnotationEntry(x$1:org.apache.bcel.classfile.ParameterAnnotationEntry):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitSignature(x$1:org.apache.bcel.classfile.Signature):Unit"></a>
+      <a id="visitSignature(Signature):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitSignature</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Signature">Signature</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitSignature(x$1:org.apache.bcel.classfile.Signature):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitSourceFile" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitSourceFile(x$1:org.apache.bcel.classfile.SourceFile):Unit"></a>
+      <a id="visitSourceFile(SourceFile):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitSourceFile</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.SourceFile">SourceFile</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitSourceFile(x$1:org.apache.bcel.classfile.SourceFile):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitStackMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitStackMap(x$1:org.apache.bcel.classfile.StackMap):Unit"></a>
+      <a id="visitStackMap(StackMap):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitStackMap</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.StackMap">StackMap</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitStackMap(x$1:org.apache.bcel.classfile.StackMap):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitStackMapEntry" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitStackMapEntry(x$1:org.apache.bcel.classfile.StackMapEntry):Unit"></a>
+      <a id="visitStackMapEntry(StackMapEntry):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitStackMapEntry</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.StackMapEntry">StackMapEntry</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitStackMapEntry(x$1:org.apache.bcel.classfile.StackMapEntry):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitSynthetic" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitSynthetic(x$1:org.apache.bcel.classfile.Synthetic):Unit"></a>
+      <a id="visitSynthetic(Synthetic):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitSynthetic</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Synthetic">Synthetic</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitSynthetic(x$1:org.apache.bcel.classfile.Synthetic):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="org.apache.bcel.classfile.EmptyVisitor#visitUnknown" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="visitUnknown(x$1:org.apache.bcel.classfile.Unknown):Unit"></a>
+      <a id="visitUnknown(Unknown):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">visitUnknown</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="org.apache.bcel.classfile.Unknown">Unknown</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@visitUnknown(x$1:org.apache.bcel.classfile.Unknown):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>EmptyVisitor → Visitor</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#it.unibo.scafi.distrib.DependencyEmitter@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.apache.bcel.classfile.EmptyVisitor">
+              <h3>Inherited from <span class="extype" name="org.apache.bcel.classfile.EmptyVisitor">EmptyVisitor</span></h3>
+            </div><div class="parent" name="org.apache.bcel.classfile.Visitor">
+              <h3>Inherited from <span class="extype" name="org.apache.bcel.classfile.Visitor">Visitor</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

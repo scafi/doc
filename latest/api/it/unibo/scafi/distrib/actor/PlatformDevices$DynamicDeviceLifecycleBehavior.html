@@ -1,0 +1,704 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>DynamicDeviceLifecycleBehavior - it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior</title>
+          <meta name="description" content="DynamicDeviceLifecycleBehavior - it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior" />
+          <meta name="keywords" content="DynamicDeviceLifecycleBehavior it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="it">it</a>.<a href="../../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="../package.html" class="extype" name="it.unibo.scafi.distrib">distrib</a>.<a href="package.html" class="extype" name="it.unibo.scafi.distrib.actor">actor</a>.<a href="PlatformDevices.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices">PlatformDevices</a></p>
+        <h1>DynamicDeviceLifecycleBehavior</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="PlatformDevices.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices">package PlatformDevices</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DynamicDeviceLifecycleBehavior</span><span class="result"> extends <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a> with <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Defines a device lifecycle behavior that depends on the field {{execScope}.
+The characteristic is that the behavior is dynamic, namely, can
+ accomodate change to its execution scope.
+(See <span class="extype" name="ExecScope">ExecScope</span>)
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="Platform.html#DynamicDeviceLifecycleBehaviorextendsLifecycleBehaviorwithPeriodicBehavior" class="extmbr" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">Platform.DynamicDeviceLifecycleBehavior</a> with <span class="extype" name="akka.actor.Actor">Actor</span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a>, <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="server/PlatformDevices$DeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.server.PlatformDevices.DeviceActor">DeviceActor</a>, <a href="p2p/PlatformDevices$DeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformDevices.DeviceActor">DeviceActor</a>, <a href="PlatformDevices$DynamicComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</a>, <a href="hybrid/PlatformDevices$HybridDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.hybrid.PlatformDevices.HybridDeviceActor">HybridDeviceActor</a>, <a href="p2p/PlatformBehaviors$P2pBaseDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor">P2pBaseDeviceActor</a>, <a href="server/PlatformBehaviors$ServerBaseDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.server.PlatformBehaviors.ServerBaseDeviceActor">ServerBaseDeviceActor</a>, <a href="hybrid/SpatialPlatform$SpatialDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.hybrid.SpatialPlatform.SpatialDeviceActor">SpatialDeviceActor</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior"><span>DynamicDeviceLifecycleBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior"><span>PeriodicBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior"><span>LifecycleBehavior</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#execScope" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="execScope:PlatformDevices.this.ExecScope"></a>
+      <a id="execScope:Platform.ExecScope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">execScope</span><span class="result">: <a href="Platform.html#ExecScopeextendsAnyRef" class="extmbr" name="it.unibo.scafi.distrib.PlatformSettings.ExecScope">Platform.ExecScope</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@execScope:PlatformDevices.this.ExecScope" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#first" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="first:Boolean"></a>
+      <a id="first:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">first</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@first:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#handleLifecycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleLifecycle():Unit"></a>
+      <a id="handleLifecycle():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleLifecycle</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@handleLifecycle():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a> → <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#initialDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initialDelay:Option[scala.concurrent.duration.FiniteDuration]"></a>
+      <a id="initialDelay:Option[FiniteDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@initialDelay:Option[scala.concurrent.duration.FiniteDuration]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#lifecyclePostStop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lifecyclePostStop():Unit"></a>
+      <a id="lifecyclePostStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lifecyclePostStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@lifecyclePostStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#lifecyclePreStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lifecyclePreStart():Unit"></a>
+      <a id="lifecyclePreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lifecyclePreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@lifecyclePreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a> → <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior#periodicBehaviorPreStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="periodicBehaviorPreStart():Unit"></a>
+      <a id="periodicBehaviorPreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">periodicBehaviorPreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@periodicBehaviorPreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior#scheduleNextWorkingCycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleNextWorkingCycle():Unit"></a>
+      <a id="scheduleNextWorkingCycle():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleNextWorkingCycle</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@scheduleNextWorkingCycle():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior#scheduleNextWorkingCycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleNextWorkingCycle(delay:scala.concurrent.duration.FiniteDuration,msg:Any):Unit"></a>
+      <a id="scheduleNextWorkingCycle(FiniteDuration,Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleNextWorkingCycle</span><span class="params">(<span name="delay">delay: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span> = <span class="symbol"><span class="name"><a href="../../../../package.html">GoOn</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@scheduleNextWorkingCycle(delay:scala.concurrent.duration.FiniteDuration,msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#tick" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tick:Option[akka.actor.Cancellable]"></a>
+      <a id="tick:Option[Cancellable]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tick</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="akka.actor.Cancellable">Cancellable</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@tick:Option[akka.actor.Cancellable]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#workInterval" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="workInterval:scala.concurrent.duration.FiniteDuration"></a>
+      <a id="workInterval:FiniteDuration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">workInterval</span><span class="result">: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@workInterval:scala.concurrent.duration.FiniteDuration" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.PlatformDevices$DynamicDeviceLifecycleBehavior@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">
+              <h3>Inherited from <a href="patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">
+              <h3>Inherited from <a href="patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>actor - it.unibo.scafi.distrib.actor</title>
+          <meta name="description" content="actor - it.unibo.scafi.distrib.actor" />
+          <meta name="keywords" content="actor it.unibo.scafi.distrib.actor" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'it.unibo.scafi.distrib.actor.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="it">it</a>.<a href="../../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="../package.html" class="extype" name="it.unibo.scafi.distrib">distrib</a></p>
+        <h1>actor</h1><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actor</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="it.unibo.scafi.distrib.actor.MsgAck" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgAckextendsProductwithSerializable"></a>
+      <a id="MsgAck:MsgAck"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgAck.html"><span class="name">MsgAck</span></a><span class="params">(<span name="corr">corr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgAckextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgAddObserver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgAddObserverextendsProductwithSerializable"></a>
+      <a id="MsgAddObserver:MsgAddObserver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgAddObserver.html"><span class="name">MsgAddObserver</span></a><span class="params">(<span name="o">o: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgAddObserverextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgCreateActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgCreateActorextendsProductwithSerializable"></a>
+      <a id="MsgCreateActor:MsgCreateActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgCreateActor.html"><span class="name">MsgCreateActor</span></a><span class="params">(<span name="props">props: <span class="extype" name="akka.actor.Props">Props</span></span>, <span name="name">name: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">None</span></span>, <span name="corr">corr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgCreateActorextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgCreationAck" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgCreationAckextendsProductwithSerializable"></a>
+      <a id="MsgCreationAck:MsgCreationAck"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgCreationAck.html"><span class="name">MsgCreationAck</span></a><span class="params">(<span name="ref">ref: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="corr">corr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgCreationAckextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgPropagate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgPropagateextendsProductwithSerializable"></a>
+      <a id="MsgPropagate:MsgPropagate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgPropagate.html"><span class="name">MsgPropagate</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgPropagateextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgRemoveObserver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgRemoveObserverextendsProductwithSerializable"></a>
+      <a id="MsgRemoveObserver:MsgRemoveObserver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgRemoveObserver.html"><span class="name">MsgRemoveObserver</span></a><span class="params">(<span name="o">o: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgRemoveObserverextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgRequestClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgRequestClassextendsProductwithSerializable"></a>
+      <a id="MsgRequestClass:MsgRequestClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgRequestClass.html"><span class="name">MsgRequestClass</span></a><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgRequestClassextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgWithClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgWithClassextendsProductwithSerializable"></a>
+      <a id="MsgWithClass:MsgWithClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgWithClass.html"><span class="name">MsgWithClass</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="code">code: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgWithClassextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgWithClasses" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgWithClassesextendsProductwithSerializable"></a>
+      <a id="MsgWithClasses:MsgWithClasses"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgWithClasses.html"><span class="name">MsgWithClasses</span></a><span class="params">(<span name="classes">classes: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>, <span name="corr">corr: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgWithClassesextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgWithInput" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgWithInput[K,V]extendsProductwithSerializable"></a>
+      <a id="MsgWithInput[K,V]:MsgWithInput[K,V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgWithInput.html"><span class="name">MsgWithInput</span></a><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="it.unibo.scafi.distrib.actor.MsgWithInput.K">K</span></span>, <span name="value">value: <span class="extype" name="it.unibo.scafi.distrib.actor.MsgWithInput.V">V</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgWithInput[K,V]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.Platform" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformextendsPlatformwithPlatformMessageswithPlatformActorswithPlatformSchedulerswithPlatformDeviceswithPlatformSensorswithPlatformAPIFacadewithPlatformViewwithPlatformCodeMobilitySupport"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform.html"><span class="name">Platform</span></a><span class="result"> extends <a href="../Platform.html" class="extype" name="it.unibo.scafi.distrib.Platform">distrib.Platform</a> with <a href="PlatformMessages.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages">PlatformMessages</a> with <a href="PlatformActors.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformActors">PlatformActors</a> with <a href="PlatformSchedulers.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformSchedulers">PlatformSchedulers</a> with <a href="PlatformDevices.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices">PlatformDevices</a> with <a href="PlatformSensors.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformSensors">PlatformSensors</a> with <a href="PlatformAPIFacade.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformAPIFacade">PlatformAPIFacade</a> with <a href="PlatformView.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformView">PlatformView</a> with <a href="PlatformCodeMobilitySupport.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformCodeMobilitySupport">PlatformCodeMobilitySupport</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformextendsPlatformwithPlatformMessageswithPlatformActorswithPlatformSchedulerswithPlatformDeviceswithPlatformSensorswithPlatformAPIFacadewithPlatformViewwithPlatformCodeMobilitySupport" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformAPIFacade" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformAPIFacadeextendsAnyRef"></a>
+      <a id="PlatformAPIFacade:PlatformAPIFacade"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformAPIFacade.html"><span class="name">PlatformAPIFacade</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformAPIFacadeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformActors" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformActorsextendsAnyRef"></a>
+      <a id="PlatformActors:PlatformActors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformActors.html"><span class="name">PlatformActors</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformActorsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformCodeMobilitySupport" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformCodeMobilitySupportextendsAnyRef"></a>
+      <a id="PlatformCodeMobilitySupport:PlatformCodeMobilitySupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformCodeMobilitySupport.html"><span class="name">PlatformCodeMobilitySupport</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformCodeMobilitySupportextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformDevicesextendsAnyRef"></a>
+      <a id="PlatformDevices:PlatformDevices"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformDevices.html"><span class="name">PlatformDevices</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformDevicesextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformMessages" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformMessagesextendsAnyRef"></a>
+      <a id="PlatformMessages:PlatformMessages"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformMessages.html"><span class="name">PlatformMessages</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformMessagesextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformSchedulers" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformSchedulersextendsAnyRef"></a>
+      <a id="PlatformSchedulers:PlatformSchedulers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformSchedulers.html"><span class="name">PlatformSchedulers</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformSchedulersextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformSensors" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformSensorsextendsAnyRef"></a>
+      <a id="PlatformSensors:PlatformSensors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformSensors.html"><span class="name">PlatformSensors</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformSensorsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformView" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PlatformViewextendsAnyRef"></a>
+      <a id="PlatformView:PlatformView"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PlatformView.html"><span class="name">PlatformView</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@PlatformViewextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.ScafiMessage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ScafiMessageextendsSerializable"></a>
+      <a id="ScafiMessage:ScafiMessage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ScafiMessage.html"><span class="name">ScafiMessage</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@ScafiMessageextendsSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Here we define *general* message types.</p><div class="fullcomment"><div class="comment cmt"><p>Here we define *general* message types.
+Essentially to provide strongly-typed containers and
+ linguistic abstractions for messages.
+</p></div></div>
+    </li><li name="it.unibo.scafi.distrib.actor.SystemMsgClassNotFound" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SystemMsgClassNotFoundextendsProductwithSerializable"></a>
+      <a id="SystemMsgClassNotFound:SystemMsgClassNotFound"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SystemMsgClassNotFound.html"><span class="name">SystemMsgClassNotFound</span></a><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@SystemMsgClassNotFoundextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="it.unibo.scafi.distrib.actor.GoOn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GoOn"></a>
+      <a id="GoOn:GoOn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GoOn$.html"><span class="name">GoOn</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@GoOn" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgPause" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgPause"></a>
+      <a id="MsgPause:MsgPause"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgPause$.html"><span class="name">MsgPause</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgPause" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgResume" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgResume"></a>
+      <a id="MsgResume:MsgResume"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgResume$.html"><span class="name">MsgResume</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgResume" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgShutdown" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgShutdown"></a>
+      <a id="MsgShutdown:MsgShutdown"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgShutdown$.html"><span class="name">MsgShutdown</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgShutdown" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgStart"></a>
+      <a id="MsgStart:MsgStart"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgStart$.html"><span class="name">MsgStart</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgStart" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.MsgStop" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MsgStop"></a>
+      <a id="MsgStop:MsgStop"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MsgStop$.html"><span class="name">MsgStop</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@MsgStop" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.Platform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Platform"></a>
+      <a id="Platform:Platform"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Platform$.html"><span class="name">Platform</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@Platform" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.extensions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extensions"></a>
+      <a id="extensions:extensions"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="extensions/package.html"><span class="name">extensions</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@extensions" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.hybrid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hybrid"></a>
+      <a id="hybrid:hybrid"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="hybrid/package.html"><span class="name">hybrid</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@hybrid" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.p2p" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="p2p"></a>
+      <a id="p2p:p2p"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="p2p/package.html"><span class="name">p2p</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@p2p" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.patterns" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="patterns"></a>
+      <a id="patterns:patterns"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="patterns/package.html"><span class="name">patterns</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@patterns" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="serialization"></a>
+      <a id="serialization:serialization"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="serialization/package.html"><span class="name">serialization</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@serialization" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.server" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="server"></a>
+      <a id="server:server"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="server/package.html"><span class="name">server</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#it.unibo.scafi.distrib.actor.package@server" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

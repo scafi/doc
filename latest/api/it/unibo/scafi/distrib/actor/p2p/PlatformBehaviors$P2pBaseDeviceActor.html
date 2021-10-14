@@ -1,0 +1,1625 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>P2pBaseDeviceActor - it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor</title>
+          <meta name="description" content="P2pBaseDeviceActor - it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor" />
+          <meta name="keywords" content="P2pBaseDeviceActor it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="it">it</a>.<a href="../../../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../../../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="../../package.html" class="extype" name="it.unibo.scafi.distrib">distrib</a>.<a href="../package.html" class="extype" name="it.unibo.scafi.distrib.actor">actor</a>.<a href="package.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p">p2p</a>.<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a></p>
+        <h1>P2pBaseDeviceActor</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">package PlatformBehaviors</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">P2pBaseDeviceActor</span><span class="result"> extends (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</span> with (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</span>, <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a>, <a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">SensorManagementBehavior</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</span>, <a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor">BaseDeviceActor</span>, <span class="extype" name="akka.actor.Actor">Actor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="PlatformDevices$DeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformDevices.DeviceActor">DeviceActor</a>, <a href="../hybrid/PlatformDevices$HybridDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.hybrid.PlatformDevices.HybridDeviceActor">HybridDeviceActor</a>, <a href="../hybrid/SpatialPlatform$SpatialDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.hybrid.SpatialPlatform.SpatialDeviceActor">SpatialDeviceActor</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor"><span>P2pBaseDeviceActor</span></li><li class="in" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior"><span>P2pNbrManagementBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor"><span>DynamicComputationDeviceActor</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior"><span>DynamicDeviceLifecycleBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior"><span>PeriodicBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior"><span>LifecycleBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor"><span>ComputationDeviceActor</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior"><span>BaseNbrManagementBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior"><span>ActuatorManagementBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior"><span>SensorManagementBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior"><span>SensingBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior"><span>BasicActorBehavior</span></li><li class="in" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor"><span>BaseDeviceActor</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.actor.Actor.Receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Receive=akka.actor.Actor.Receive"></a>
+      <a id="Receive:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Receive</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@Receive=akka.actor.Actor.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#aggregateExecutor" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="aggregateExecutor:Option[PlatformDevices.this.ProgramContract]"></a>
+      <a id="aggregateExecutor:Option[(PlatformBehaviors.this)#ProgramContract]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aggregateExecutor</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ProgramContract">ProgramContract</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aggregateExecutor:Option[PlatformDevices.this.ProgramContract]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#execScope" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="execScope:PlatformDevices.this.ExecScope"></a>
+      <a id="execScope:(PlatformBehaviors.this)#ExecScope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">execScope</span><span class="result">: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.PlatformSettings.ExecScope">ExecScope</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@execScope:PlatformDevices.this.ExecScope" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor#selfId" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="selfId:PlatformDevices.this.UID"></a>
+      <a id="selfId:(PlatformBehaviors.this)#UID"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selfId</span><span class="result">: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@selfId:PlatformDevices.this.UID" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor">BaseDeviceActor</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior#actuatorManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="actuatorManagementBehavior:ActuatorManagementBehavior.this.Receive"></a>
+      <a id="actuatorManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actuatorManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@actuatorManagementBehavior:ActuatorManagementBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ActuatorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior#actuators" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="actuators:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,Any=&gt;Unit]"></a>
+      <a id="actuators:Map[(PlatformBehaviors.this)#LSensorName,(Any)⇒Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actuators</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span>, (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@actuators:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,Any=&gt;Unit]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ActuatorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor#afterJob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="afterJob():Unit"></a>
+      <a id="afterJob():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">afterJob</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@afterJob():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</a> → <a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPostRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPostRestart(reason:Throwable):Unit"></a>
+      <a id="aroundPostRestart(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPostRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aroundPostRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@InternalApi</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPostStop" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPostStop():Unit"></a>
+      <a id="aroundPostStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPostStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aroundPostStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@InternalApi</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPreRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPreRestart(reason:Throwable,message:Option[Any]):Unit"></a>
+      <a id="aroundPreRestart(Throwable,Option[Any]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPreRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@InternalApi</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPreStart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPreStart():Unit"></a>
+      <a id="aroundPreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aroundPreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@InternalApi</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundReceive" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit"></a>
+      <a id="aroundReceive(akka.actor.Actor.Receive,Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundReceive</span><span class="params">(<span name="receive">receive: <span class="extype" name="akka.actor.Actor.Receive">akka.actor.Actor.Receive</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@InternalApi</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#beforeJob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="beforeJob():Unit"></a>
+      <a id="beforeJob():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">beforeJob</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@beforeJob():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior#commandManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="commandManagementBehavior:BasicActorBehavior.this.Receive"></a>
+      <a id="commandManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">commandManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@commandManagementBehavior:BasicActorBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#compute" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compute(ctx:PlatformDevices.this.ComputationContext):PlatformDevices.this.ComputationExport"></a>
+      <a id="compute((PlatformBehaviors.this)#ComputationContext):(PlatformBehaviors.this)#ComputationExport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compute</span><span class="params">(<span name="ctx">ctx: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ComputationContext">ComputationContext</span></span>)</span><span class="result">: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ComputationExport">ComputationExport</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@compute(ctx:PlatformDevices.this.ComputationContext):PlatformDevices.this.ComputationExport" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#context" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="context:akka.actor.ActorContext"></a>
+      <a id="context:ActorContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">context</span><span class="result">: <span class="extype" name="akka.actor.ActorContext">ActorContext</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@context:akka.actor.ActorContext" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#doJob" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doJob():Unit"></a>
+      <a id="doJob():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doJob</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@doJob():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior#executeActuators" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executeActuators(value:Any):Unit"></a>
+      <a id="executeActuators(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executeActuators</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@executeActuators(value:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ActuatorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#first" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="first:Boolean"></a>
+      <a id="first:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">first</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@first:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#handleLifecycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleLifecycle():Unit"></a>
+      <a id="handleLifecycle():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleLifecycle</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@handleLifecycle():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a> → <a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#initialDelay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initialDelay:Option[scala.concurrent.duration.FiniteDuration]"></a>
+      <a id="initialDelay:Option[FiniteDuration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialDelay</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@initialDelay:Option[scala.concurrent.duration.FiniteDuration]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior#inputManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="inputManagementBehavior:P2pNbrManagementBehavior.this.Receive"></a>
+      <a id="inputManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inputManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@inputManagementBehavior:P2pNbrManagementBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PlatformBehaviors$P2pNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</a> → <a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#lastExport" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastExport:Option[PlatformDevices.this.ComputationExport]"></a>
+      <a id="lastExport:Option[(PlatformBehaviors.this)#ComputationExport]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastExport</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ComputationExport">ComputationExport</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@lastExport:Option[PlatformDevices.this.ComputationExport]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#lifecyclePostStop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lifecyclePostStop():Unit"></a>
+      <a id="lifecyclePostStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lifecyclePostStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@lifecyclePostStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#lifecyclePreStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lifecyclePreStart():Unit"></a>
+      <a id="lifecyclePreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lifecyclePreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@lifecyclePreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a> → <a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior#localSensors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSensors:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,()=&gt;Any]"></a>
+      <a id="localSensors:Map[(PlatformBehaviors.this)#LSensorName,()⇒Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSensors</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span>, () ⇒ <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@localSensors:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,()=&gt;Any]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">SensorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior#logger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:akka.event.LoggingAdapter"></a>
+      <a id="logger:LoggingAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <span class="extype" name="akka.event.LoggingAdapter">LoggingAdapter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@logger:akka.event.LoggingAdapter" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior#mergeNeighborInfo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeNeighborInfo(idn:PlatformDevices.this.UID,info:PlatformDevices.this.NbrInfo):Unit"></a>
+      <a id="mergeNeighborInfo((PlatformBehaviors.this)#UID,(PlatformBehaviors.this)#NbrInfo):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeNeighborInfo</span><span class="params">(<span name="idn">idn: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span></span>, <span name="info">info: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.Platform.NbrInfo">NbrInfo</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@mergeNeighborInfo(idn:PlatformDevices.this.UID,info:PlatformDevices.this.NbrInfo):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior#nbrSensorValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nbrSensorValues:scala.collection.mutable.Map[PlatformDevices.this.NSensorName,scala.collection.mutable.Map[PlatformDevices.this.UID,Any]]"></a>
+      <a id="nbrSensorValues:Map[(PlatformBehaviors.this)#NSensorName,Map[(PlatformBehaviors.this)#UID,Any]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nbrSensorValues</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.NSensorName">NSensorName</span>, <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>, <span class="extype" name="scala.Any">Any</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@nbrSensorValues:scala.collection.mutable.Map[PlatformDevices.this.NSensorName,scala.collection.mutable.Map[PlatformDevices.this.UID,Any]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensingBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior#nbrs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nbrs:scala.collection.immutable.Map[PlatformDevices.this.UID,PlatformDevices.this.NbrInfo]"></a>
+      <a id="nbrs:Map[(PlatformBehaviors.this)#UID,(PlatformBehaviors.this)#NbrInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nbrs</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>, (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.Platform.NbrInfo">NbrInfo</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@nbrs:scala.collection.immutable.Map[PlatformDevices.this.UID,PlatformDevices.this.NbrInfo]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior#neighbourhoodManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="neighbourhoodManagementBehavior:P2pNbrManagementBehavior.this.Receive"></a>
+      <a id="neighbourhoodManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">neighbourhoodManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@neighbourhoodManagementBehavior:P2pNbrManagementBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PlatformBehaviors$P2pNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior#periodicBehaviorPreStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="periodicBehaviorPreStart():Unit"></a>
+      <a id="periodicBehaviorPreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">periodicBehaviorPreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@periodicBehaviorPreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#postRestart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postRestart(reason:Throwable):Unit"></a>
+      <a id="postRestart(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@postRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#postStop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postStop():Unit"></a>
+      <a id="postStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@postStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#preRestart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preRestart(reason:Throwable,message:Option[Any]):Unit"></a>
+      <a id="preRestart(Throwable,Option[Any]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor#preStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preStart():Unit"></a>
+      <a id="preStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@preStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</a> → <a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a> → Actor</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#propagateExportToNeighbors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propagateExportToNeighbors(export:PlatformDevices.this.ComputationExport):Unit"></a>
+      <a id="propagateExportToNeighbors((PlatformBehaviors.this)#ComputationExport):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propagateExportToNeighbors</span><span class="params">(<span name="export">export: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ComputationExport">ComputationExport</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@propagateExportToNeighbors(export:PlatformDevices.this.ComputationExport):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor#propagateMsgToNeighbors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propagateMsgToNeighbors(msg:Any):Unit"></a>
+      <a id="propagateMsgToNeighbors(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propagateMsgToNeighbors</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@propagateMsgToNeighbors(msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor">P2pBaseDeviceActor</a> → <a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior#queryManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="queryManagementBehavior:BasicActorBehavior.this.Receive"></a>
+      <a id="queryManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">queryManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@queryManagementBehavior:BasicActorBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior#receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="receive:BasicActorBehavior.this.Receive"></a>
+      <a id="receive:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@receive:BasicActorBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior#removeNeighbor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeNeighbor(idn:PlatformDevices.this.UID):Unit"></a>
+      <a id="removeNeighbor((PlatformBehaviors.this)#UID):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeNeighbor</span><span class="params">(<span name="idn">idn: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@removeNeighbor(idn:PlatformDevices.this.UID):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior#replaceNeighborhood" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="replaceNeighborhood(neighbors:Map[PlatformBehaviors.this.UID,(Option[akka.actor.ActorRef],Option[String])]):Unit"></a>
+      <a id="replaceNeighborhood(Map[(PlatformBehaviors.this)#UID,(Option[ActorRef],Option[String])]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">replaceNeighborhood</span><span class="params">(<span name="neighbors">neighbors: <span class="extype" name="scala.Predef.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>, (<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="akka.actor.ActorRef">ActorRef</span>], <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@replaceNeighborhood(neighbors:Map[PlatformBehaviors.this.UID,(Option[akka.actor.ActorRef],Option[String])]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PlatformBehaviors$P2pNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#rounds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rounds:Int"></a>
+      <a id="rounds:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rounds</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@rounds:Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior#scheduleNextWorkingCycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleNextWorkingCycle():Unit"></a>
+      <a id="scheduleNextWorkingCycle():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleNextWorkingCycle</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@scheduleNextWorkingCycle():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior#scheduleNextWorkingCycle" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scheduleNextWorkingCycle(delay:scala.concurrent.duration.FiniteDuration,msg:Any):Unit"></a>
+      <a id="scheduleNextWorkingCycle(FiniteDuration,Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scheduleNextWorkingCycle</span><span class="params">(<span name="delay">delay: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span> = <span class="symbol"><span class="name"><a href="../../../../../package.html">GoOn</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@scheduleNextWorkingCycle(delay:scala.concurrent.duration.FiniteDuration,msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="self:akka.actor.ActorRef"></a>
+      <a id="self:ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">self</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@self:akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#sender" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sender():akka.actor.ActorRef"></a>
+      <a id="sender():ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sender</span><span class="params">()</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@sender():akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior#sensingBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sensingBehavior:SensingBehavior.this.Receive"></a>
+      <a id="sensingBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sensingBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@sensingBehavior:SensingBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensingBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior#sensorManagementBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sensorManagementBehavior:SensorManagementBehavior.this.Receive"></a>
+      <a id="sensorManagementBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sensorManagementBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@sensorManagementBehavior:SensorManagementBehavior.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">SensorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior#sensorValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sensorValues:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,Any]"></a>
+      <a id="sensorValues:Map[(PlatformBehaviors.this)#LSensorName,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sensorValues</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@sensorValues:scala.collection.mutable.Map[PlatformDevices.this.LSensorName,Any]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensingBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior#setActuator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setActuator(name:PlatformDevices.this.LSensorName,consumer:Any=&gt;Unit):Unit"></a>
+      <a id="setActuator((PlatformBehaviors.this)#LSensorName,(Any)⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setActuator</span><span class="params">(<span name="name">name: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span></span>, <span name="consumer">consumer: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@setActuator(name:PlatformDevices.this.LSensorName,consumer:Any=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ActuatorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior#setLocalSensor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setLocalSensor(name:PlatformDevices.this.LSensorName,provider:()=&gt;Any):Unit"></a>
+      <a id="setLocalSensor((PlatformBehaviors.this)#LSensorName,()⇒Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setLocalSensor</span><span class="params">(<span name="name">name: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span></span>, <span name="provider">provider: () ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@setLocalSensor(name:PlatformDevices.this.LSensorName,provider:()=&gt;Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensorManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">SensorManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior#setLocalSensorValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setLocalSensorValue(name:PlatformDevices.this.LSensorName,value:Any):Unit"></a>
+      <a id="setLocalSensorValue((PlatformBehaviors.this)#LSensorName,Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setLocalSensorValue</span><span class="params">(<span name="name">name: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.LSensorName">LSensorName</span></span>, <span name="value">value: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@setLocalSensorValue(name:PlatformDevices.this.LSensorName,value:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensingBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior#setNbrSensorValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setNbrSensorValue(name:PlatformDevices.this.NSensorName,map:Map[PlatformDevices.this.UID,Any]):Unit"></a>
+      <a id="setNbrSensorValue((PlatformBehaviors.this)#NSensorName,Map[(PlatformBehaviors.this)#UID,Any]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setNbrSensorValue</span><span class="params">(<span name="name">name: (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.NSensorName">NSensorName</span></span>, <span name="map">map: <span class="extype" name="scala.Predef.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>, <span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@setNbrSensorValue(name:PlatformDevices.this.NSensorName,map:Map[PlatformDevices.this.UID,Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$SensingBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#supervisorStrategy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="supervisorStrategy:akka.actor.SupervisorStrategy"></a>
+      <a id="supervisorStrategy:SupervisorStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">supervisorStrategy</span><span class="result">: <span class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#tick" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tick:Option[akka.actor.Cancellable]"></a>
+      <a id="tick:Option[Cancellable]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tick</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="akka.actor.Cancellable">Cancellable</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@tick:Option[akka.actor.Cancellable]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="akka.actor.Actor#unhandled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unhandled(message:Any):Unit"></a>
+      <a id="unhandled(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unhandled</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@unhandled(message:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior#updateNeighborhood" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateNeighborhood(neighbors:Set[PlatformDevices.this.UID],clear:Boolean):Unit"></a>
+      <a id="updateNeighborhood(Set[(PlatformBehaviors.this)#UID],Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateNeighborhood</span><span class="params">(<span name="neighbors">neighbors: <span class="extype" name="scala.Predef.Set">Set</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>]</span>, <span name="clear">clear: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@updateNeighborhood(neighbors:Set[PlatformDevices.this.UID],clear:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior#updateNeighborsState" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateNeighborsState(exps:Map[PlatformDevices.this.UID,Option[PlatformDevices.this.ComputationExport]],clear:Boolean):Unit"></a>
+      <a id="updateNeighborsState(Map[(PlatformBehaviors.this)#UID,Option[(PlatformBehaviors.this)#ComputationExport]],Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateNeighborsState</span><span class="params">(<span name="exps">exps: <span class="extype" name="scala.Predef.Map">Map</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.UID">UID</span>, <span class="extype" name="scala.Option">Option</span>[(<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.BasePlatform.ComputationExport">ComputationExport</span>]]</span>, <span name="clear">clear: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@updateNeighborsState(exps:Map[PlatformDevices.this.UID,Option[PlatformDevices.this.ComputationExport]],clear:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$BaseNbrManagementBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#updateSensorValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateSensorValues():Unit"></a>
+      <a id="updateSensorValues():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateSensorValues</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@updateSensorValues():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior#workInterval" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="workInterval:scala.concurrent.duration.FiniteDuration"></a>
+      <a id="workInterval:FiniteDuration"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">workInterval</span><span class="result">: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@workInterval:scala.concurrent.duration.FiniteDuration" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$DynamicDeviceLifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</a> → <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor#workingBehavior" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="workingBehavior:ComputationDeviceActor.this.Receive"></a>
+      <a id="workingBehavior:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">workingBehavior</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pBaseDeviceActor.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@workingBehavior:ComputationDeviceActor.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PlatformDevices$ComputationDeviceActor.html" class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</a> → <a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors$P2pBaseDeviceActor@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors.P2pNbrManagementBehavior">P2pNbrManagementBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicComputationDeviceActor">DynamicComputationDeviceActor</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.DynamicDeviceLifecycleBehavior">DynamicDeviceLifecycleBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">
+              <h3>Inherited from <a href="../patterns/PeriodicBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.PeriodicBehavior">PeriodicBehavior</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">
+              <h3>Inherited from <a href="../patterns/LifecycleBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.LifecycleBehavior">LifecycleBehavior</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ComputationDeviceActor">ComputationDeviceActor</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseNbrManagementBehavior">BaseNbrManagementBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.ActuatorManagementBehavior">ActuatorManagementBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensorManagementBehavior">SensorManagementBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.SensingBehavior">SensingBehavior</span></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">
+              <h3>Inherited from <a href="../patterns/BasicActorBehavior.html" class="extype" name="it.unibo.scafi.distrib.actor.patterns.BasicActorBehavior">BasicActorBehavior</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor">
+              <h3>Inherited from (<a href="PlatformBehaviors.html" class="extype" name="it.unibo.scafi.distrib.actor.p2p.PlatformBehaviors">PlatformBehaviors</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformDevices.BaseDeviceActor">BaseDeviceActor</span></h3>
+            </div><div class="parent" name="akka.actor.Actor">
+              <h3>Inherited from <span class="extype" name="akka.actor.Actor">Actor</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

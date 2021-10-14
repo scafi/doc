@@ -1,0 +1,1098 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>JsonMessagesSerialization - it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization</title>
+          <meta name="description" content="JsonMessagesSerialization - it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization" />
+          <meta name="keywords" content="JsonMessagesSerialization it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="it">it</a>.<a href="../../../../package.html" class="extype" name="it.unibo">unibo</a>.<a href="../../../package.html" class="extype" name="it.unibo.scafi">scafi</a>.<a href="../../package.html" class="extype" name="it.unibo.scafi.distrib">distrib</a>.<a href="../package.html" class="extype" name="it.unibo.scafi.distrib.actor">actor</a>.<a href="package.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization">serialization</a></p>
+        <h1>JsonMessagesSerialization</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization">package serialization</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JsonMessagesSerialization</span><span class="result"> extends <a href="BasicJsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">BasicJsonAnySerialization</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a> with <a href="../Platform.html" class="extype" name="it.unibo.scafi.distrib.actor.Platform">Platform</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="BasicJsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">BasicJsonAnySerialization</a>, <a href="JsonCommonFunctionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization">JsonCommonFunctionSerialization</a>, <a href="JsonTupleSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization">JsonTupleSerialization</a>, <a href="JsonCollectionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization">JsonCollectionSerialization</a>, <a href="JsonOptionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization">JsonOptionSerialization</a>, <a href="JsonPrimitiveSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization">JsonPrimitiveSerialization</a>, <a href="JsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization">JsonAnySerialization</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../../../incarnations/AbstractJsonIncarnationSerializer.html" class="extype" name="it.unibo.scafi.incarnations.AbstractJsonIncarnationSerializer">AbstractJsonIncarnationSerializer</a>, <a href="AbstractJsonPlatformSerializer.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.AbstractJsonPlatformSerializer">AbstractJsonPlatformSerializer</a>, <a href="../../../incarnations/BasicAbstractActorIncarnation.html" class="extype" name="it.unibo.scafi.incarnations.BasicAbstractActorIncarnation">BasicAbstractActorIncarnation</a>, <a href="../../../incarnations/BasicActorP2P$.html" class="extype" name="it.unibo.scafi.incarnations.BasicActorP2P">BasicActorP2P</a>, <a href="../../../incarnations/BasicActorServerBased$.html" class="extype" name="it.unibo.scafi.incarnations.BasicActorServerBased">BasicActorServerBased</a>, <a href="../../../incarnations/BasicActorSpatial$.html" class="extype" name="it.unibo.scafi.incarnations.BasicActorSpatial">BasicActorSpatial</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization"><span>JsonMessagesSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization"><span>BasicJsonAnySerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization"><span>JsonCommonFunctionSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization"><span>JsonTupleSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization"><span>JsonCollectionSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization"><span>JsonOptionSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization"><span>JsonPrimitiveSerialization</span></li><li class="in" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization"><span>JsonAnySerialization</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization#anyToJs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="anyToJs:PartialFunction[Any,play.api.libs.json.JsValue]"></a>
+      <a id="anyToJs:PartialFunction[Any,JsValue]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">anyToJs</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@anyToJs:PartialFunction[Any,play.api.libs.json.JsValue]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicJsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">BasicJsonAnySerialization</a> → <a href="JsonCommonFunctionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization">JsonCommonFunctionSerialization</a> → <a href="JsonTupleSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization">JsonTupleSerialization</a> → <a href="JsonCollectionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization">JsonCollectionSerialization</a> → <a href="JsonOptionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization">JsonOptionSerialization</a> → <a href="JsonPrimitiveSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization">JsonPrimitiveSerialization</a> → <a href="JsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization">JsonAnySerialization</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization#jsToAny" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jsToAny:PartialFunction[play.api.libs.json.JsValue,Any]"></a>
+      <a id="jsToAny:PartialFunction[JsValue,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jsToAny</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@jsToAny:PartialFunction[play.api.libs.json.JsValue,Any]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicJsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">BasicJsonAnySerialization</a> → <a href="JsonCommonFunctionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization">JsonCommonFunctionSerialization</a> → <a href="JsonTupleSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization">JsonTupleSerialization</a> → <a href="JsonCollectionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization">JsonCollectionSerialization</a> → <a href="JsonOptionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization">JsonOptionSerialization</a> → <a href="JsonPrimitiveSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization">JsonPrimitiveSerialization</a> → <a href="JsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization">JsonAnySerialization</a></dd></dl></div>
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgExportReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgExportReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgExport]"></a>
+      <a id="msgExportReads:Reads[(JsonMessagesSerialization.this)#MsgExport]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgExportReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgExport">MsgExport</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgExportReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgExport]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgExportWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgExportWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgExport]"></a>
+      <a id="msgExportWrites:Writes[(JsonMessagesSerialization.this)#MsgExport]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgExportWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgExport">MsgExport</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgExportWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgExport]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgExportsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgExports]"></a>
+      <a id="msgExportsReads:Reads[(JsonMessagesSerialization.this)#MsgExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgExportsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgExports">MsgExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgExportsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgExports]"></a>
+      <a id="msgExportsWrites:Writes[(JsonMessagesSerialization.this)#MsgExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgExportsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgExports">MsgExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgGetNeighborhoodExportsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgGetNeighborhoodExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgGetNeighborhoodExports]"></a>
+      <a id="msgGetNeighborhoodExportsReads:Reads[(JsonMessagesSerialization.this)#MsgGetNeighborhoodExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgGetNeighborhoodExportsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgGetNeighborhoodExports">MsgGetNeighborhoodExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgGetNeighborhoodExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgGetNeighborhoodExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgGetNeighborhoodExportsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgGetNeighborhoodExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgGetNeighborhoodExports]"></a>
+      <a id="msgGetNeighborhoodExportsWrites:Writes[(JsonMessagesSerialization.this)#MsgGetNeighborhoodExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgGetNeighborhoodExportsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgGetNeighborhoodExports">MsgGetNeighborhoodExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgGetNeighborhoodExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgGetNeighborhoodExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgGetNeighborhoodLocationsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgGetNeighborhoodLocationsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgGetNeighborhoodLocations]"></a>
+      <a id="msgGetNeighborhoodLocationsReads:Reads[(JsonMessagesSerialization.this)#MsgGetNeighborhoodLocations]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgGetNeighborhoodLocationsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgGetNeighborhoodLocations">MsgGetNeighborhoodLocations</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgGetNeighborhoodLocationsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgGetNeighborhoodLocations]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgGetNeighborhoodLocationsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgGetNeighborhoodLocationsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgGetNeighborhoodLocations]"></a>
+      <a id="msgGetNeighborhoodLocationsWrites:Writes[(JsonMessagesSerialization.this)#MsgGetNeighborhoodLocations]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgGetNeighborhoodLocationsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgGetNeighborhoodLocations">MsgGetNeighborhoodLocations</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgGetNeighborhoodLocationsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgGetNeighborhoodLocations]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgLocalSensorValueReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgLocalSensorValueReads[T](implicitevidence$15:play.api.libs.json.Reads[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgLocalSensorValue[T]]"></a>
+      <a id="msgLocalSensorValueReads[T](Reads[T]):Reads[(JsonMessagesSerialization.this)#MsgLocalSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgLocalSensorValueReads</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgLocalSensorValueReads.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgLocalSensorValue">MsgLocalSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgLocalSensorValueReads.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgLocalSensorValueReads[T](implicitevidence$15:play.api.libs.json.Reads[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgLocalSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgLocalSensorValueWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgLocalSensorValueWrites[T](implicitevidence$14:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgLocalSensorValue[T]]"></a>
+      <a id="msgLocalSensorValueWrites[T](Writes[T]):Writes[(JsonMessagesSerialization.this)#MsgLocalSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgLocalSensorValueWrites</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgLocalSensorValueWrites.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgLocalSensorValue">MsgLocalSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgLocalSensorValueWrites.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgLocalSensorValueWrites[T](implicitevidence$14:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgLocalSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNbrSensorValueReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNbrSensorValueReads[T](implicitevidence$19:play.api.libs.json.Format[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNbrSensorValue[T]]"></a>
+      <a id="msgNbrSensorValueReads[T](Format[T]):Reads[(JsonMessagesSerialization.this)#MsgNbrSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNbrSensorValueReads</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Format">Format</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgNbrSensorValueReads.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNbrSensorValue">MsgNbrSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgNbrSensorValueReads.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNbrSensorValueReads[T](implicitevidence$19:play.api.libs.json.Format[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNbrSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNbrSensorValueWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNbrSensorValueWrites[T](implicitevidence$18:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNbrSensorValue[T]]"></a>
+      <a id="msgNbrSensorValueWrites[T](Writes[T]):Writes[(JsonMessagesSerialization.this)#MsgNbrSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNbrSensorValueWrites</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgNbrSensorValueWrites.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNbrSensorValue">MsgNbrSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgNbrSensorValueWrites.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNbrSensorValueWrites[T](implicitevidence$18:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNbrSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighbor]"></a>
+      <a id="msgNeighborReads:Reads[(JsonMessagesSerialization.this)#MsgNeighbor]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighbor">MsgNeighbor</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighbor]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighbor]"></a>
+      <a id="msgNeighborWrites:Writes[(JsonMessagesSerialization.this)#MsgNeighbor]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighbor">MsgNeighbor</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighbor]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodExportsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhoodExports]"></a>
+      <a id="msgNeighborhoodExportsReads:Reads[(JsonMessagesSerialization.this)#MsgNeighborhoodExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodExportsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhoodExports">MsgNeighborhoodExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodExportsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhoodExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodExportsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhoodExports]"></a>
+      <a id="msgNeighborhoodExportsWrites:Writes[(JsonMessagesSerialization.this)#MsgNeighborhoodExports]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodExportsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhoodExports">MsgNeighborhoodExports</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodExportsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhoodExports]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodLocationsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodLocationsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhoodLocations]"></a>
+      <a id="msgNeighborhoodLocationsReads:Reads[(JsonMessagesSerialization.this)#MsgNeighborhoodLocations]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodLocationsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhoodLocations">MsgNeighborhoodLocations</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodLocationsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhoodLocations]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodLocationsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodLocationsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhoodLocations]"></a>
+      <a id="msgNeighborhoodLocationsWrites:Writes[(JsonMessagesSerialization.this)#MsgNeighborhoodLocations]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodLocationsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhoodLocations">MsgNeighborhoodLocations</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodLocationsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhoodLocations]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhood]"></a>
+      <a id="msgNeighborhoodReads:Reads[(JsonMessagesSerialization.this)#MsgNeighborhood]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhood">MsgNeighborhood</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgNeighborhood]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgNeighborhoodWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgNeighborhoodWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhood]"></a>
+      <a id="msgNeighborhoodWrites:Writes[(JsonMessagesSerialization.this)#MsgNeighborhood]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgNeighborhoodWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgNeighborhood">MsgNeighborhood</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgNeighborhoodWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgNeighborhood]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgPositionReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgPositionReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgPosition]"></a>
+      <a id="msgPositionReads:Reads[(JsonMessagesSerialization.this)#MsgPosition]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgPositionReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgPosition">MsgPosition</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgPositionReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgPosition]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgPositionWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgPositionWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgPosition]"></a>
+      <a id="msgPositionWrites:Writes[(JsonMessagesSerialization.this)#MsgPosition]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgPositionWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgPosition">MsgPosition</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgPositionWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgPosition]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgRegistrationReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgRegistrationReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgRegistration]"></a>
+      <a id="msgRegistrationReads:Reads[(JsonMessagesSerialization.this)#MsgRegistration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgRegistrationReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgRegistration">MsgRegistration</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgRegistrationReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgRegistration]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgRegistrationWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgRegistrationWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgRegistration]"></a>
+      <a id="msgRegistrationWrites:Writes[(JsonMessagesSerialization.this)#MsgRegistration]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgRegistrationWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgRegistration">MsgRegistration</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgRegistrationWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgRegistration]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgRoundReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgRoundReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgRound]"></a>
+      <a id="msgRoundReads:Reads[(JsonMessagesSerialization.this)#MsgRound]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgRoundReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgRound">MsgRound</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgRoundReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgRound]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgRoundWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgRoundWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgRound]"></a>
+      <a id="msgRoundWrites:Writes[(JsonMessagesSerialization.this)#MsgRound]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgRoundWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgRound">MsgRound</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgRoundWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgRound]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgSensorValueReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgSensorValueReads[T](implicitevidence$17:play.api.libs.json.Reads[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgSensorValue[T]]"></a>
+      <a id="msgSensorValueReads[T](Reads[T]):Reads[(JsonMessagesSerialization.this)#MsgSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgSensorValueReads</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgSensorValueReads.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgSensorValue">MsgSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgSensorValueReads.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgSensorValueReads[T](implicitevidence$17:play.api.libs.json.Reads[T]):play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgSensorValueWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgSensorValueWrites[T](implicitevidence$16:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgSensorValue[T]]"></a>
+      <a id="msgSensorValueWrites[T](Writes[T]):Writes[(JsonMessagesSerialization.this)#MsgSensorValue[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgSensorValueWrites</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgSensorValueWrites.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgSensorValue">MsgSensorValue</span>[<span class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization.msgSensorValueWrites.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgSensorValueWrites[T](implicitevidence$16:play.api.libs.json.Writes[T]):play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgSensorValue[T]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgUpdateProgramReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgUpdateProgramReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgUpdateProgram]"></a>
+      <a id="msgUpdateProgramReads:Reads[(JsonMessagesSerialization.this)#MsgUpdateProgram]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgUpdateProgramReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgUpdateProgram">MsgUpdateProgram</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgUpdateProgramReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MsgUpdateProgram]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#msgUpdateProgramWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msgUpdateProgramWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgUpdateProgram]"></a>
+      <a id="msgUpdateProgramWrites:Writes[(JsonMessagesSerialization.this)#MsgUpdateProgram]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msgUpdateProgramWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MsgUpdateProgram">MsgUpdateProgram</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@msgUpdateProgramWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MsgUpdateProgram]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#myNameIsReads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myNameIsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MyNameIs]"></a>
+      <a id="myNameIsReads:Reads[(JsonMessagesSerialization.this)#MyNameIs]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myNameIsReads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MyNameIs">MyNameIs</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@myNameIsReads:play.api.libs.json.Reads[JsonMessagesSerialization.this.MyNameIs]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization#myNameIsWrites" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myNameIsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MyNameIs]"></a>
+      <a id="myNameIsWrites:Writes[(JsonMessagesSerialization.this)#MyNameIs]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myNameIsWrites</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[(<a href="" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization">JsonMessagesSerialization</a>.this)#<span class="extype" name="it.unibo.scafi.distrib.actor.PlatformMessages.MyNameIs">MyNameIs</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@myNameIsWrites:play.api.libs.json.Writes[JsonMessagesSerialization.this.MyNameIs]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#it.unibo.scafi.distrib.actor.serialization.JsonMessagesSerialization@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">
+              <h3>Inherited from <a href="BasicJsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.BasicJsonAnySerialization">BasicJsonAnySerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization">
+              <h3>Inherited from <a href="JsonCommonFunctionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCommonFunctionSerialization">JsonCommonFunctionSerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization">
+              <h3>Inherited from <a href="JsonTupleSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonTupleSerialization">JsonTupleSerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization">
+              <h3>Inherited from <a href="JsonCollectionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonCollectionSerialization">JsonCollectionSerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization">
+              <h3>Inherited from <a href="JsonOptionSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonOptionSerialization">JsonOptionSerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization">
+              <h3>Inherited from <a href="JsonPrimitiveSerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonPrimitiveSerialization">JsonPrimitiveSerialization</a></h3>
+            </div><div class="parent" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization">
+              <h3>Inherited from <a href="JsonAnySerialization.html" class="extype" name="it.unibo.scafi.distrib.actor.serialization.JsonAnySerialization">JsonAnySerialization</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
